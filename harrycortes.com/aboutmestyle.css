@@ -1,0 +1,116 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+
+body {
+  background-color: white;
+  font-family: "Josefin Slab", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+
+ul{
+  list-style: none; 
+}
+
+#headerlinks{
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+#headerlinksleft{
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+#header-link{
+  padding-right: 15px; 
+  padding-left: 15px; 
+}
+
+#headerlinksright{
+  padding: 15px; 
+  padding-top: 0px; 
+  position: relative; 
+}
+
+#headerlinksright a:active{
+  top: 2px; 
+  color: black; 
+}
+
+
+#Pics{
+  padding-top: 25px; 
+  border-bottom: 1px dotted black; 
+}
+
+#About-Me{
+  border-bottom: 1px dotted black; 
+}
+
+#about-title{
+  padding-top: 25px; 
+}
+
+#about-info{
+  margin: auto; 
+  width: 80%; 
+  padding-top: 25px; 
+  padding-bottom: 25px; 
+}
+
+#Mission-Statement{
+  border-bottom: 1px dotted black; 
+}
+
+#mission-title{
+  padding-top: 25px; 
+}
+
+#mission-info{
+  margin: auto; 
+  width: 80%; 
+  padding-top: 25px; 
+  padding-bottom: 25px; 
+}
+
+#Elevator-Pitch{
+  border-bottom: 1px dotted black; 
+}
+
+#elevator-title{
+  padding-top: 25px; 
+}
+
+#elevator-info{
+  margin: auto; 
+  width: 80%; 
+  padding-top: 25px; 
+  padding-bottom: 25px; 
+}
+
+
+#footer{
+  padding-top: 50px; 
+}
+
+#footerlinks{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: flex-end; 
+}
+
+#footer-link{
+  padding: 5px; 
+  border-left: .5px solid black; 
+  border-right: .5px solid black;
+}

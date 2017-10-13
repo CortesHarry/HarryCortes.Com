@@ -1,0 +1,103 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+
+body {
+  background-color: white;
+  font-family: "Josefin Slab", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: "Josefin Slab", serif;
+  font-size: 38px;
+}
+
+ul{
+  list-style: none; 
+}
+
+#headerlinks{
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+#headerlinksleft{
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+#header-link{
+  padding-right: 15px; 
+  padding-left: 15px; 
+}
+
+#headerlinksright{
+  padding: 15px; 
+  padding-top: 0px; 
+  position: relative; 
+}
+
+#headerlinksright a:active{
+  top: 2px; 
+  color: black; 
+}
+
+
+#contact-section{
+  font-family: "Josefin Slab", serif;
+}
+
+#contact-title{
+  padding: 50px; 
+}
+
+#contact-text{
+  border-bottom: 1px dashed black; 
+  padding-bottom: 25px; 
+}
+
+#linkssection{
+  padding-top: 25px; 
+  padding-bottom: 25px; 
+  border-bottom: 1px dashed black; 
+}
+
+#mainbodylinks{
+  justify-content: center; 
+  padding-top: 50px; 
+  padding-bottom: 25px; 
+}
+
+#mainbodylinks figure{
+  margin: auto; 
+  justify-content: center; 
+  padding-left: 35%; 
+}
+
+#mainbody-link{
+  justify-content: center; 
+  margin: auto; 
+}
+
+
+#footer{
+  padding-top: 25px; 
+}
+
+#footerlinks{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: flex-end; 
+}
+
+#footer-link{
+  padding: 5px; 
+  border-left: .5px solid black; 
+  border-right: .5px solid black;
+}

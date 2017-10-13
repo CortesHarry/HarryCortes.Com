@@ -1,0 +1,118 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700');
+
+body {
+  background-color: white;
+  font-family: "Josefin Slab", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: auto;
+  color: #444;
+}
+
+h1 {
+  font-family: "Orbitron", serif;
+  font-size: 38px;
+}
+
+ul{
+  list-style: none; 
+}
+
+#headerlinks{
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+#headerlinksleft{
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+#header-link{
+  padding-right: 15px; 
+  padding-left: 15px; 
+}
+
+#headerlinksright{
+  padding: 15px; 
+  padding-top: 0px; 
+  position: relative; 
+}
+
+#headerlinksright a:active{
+  top: 2px; 
+  color: black; 
+}
+
+
+#introduction{ 
+  padding-bottom: 15px; 
+  padding-top: 15px; 
+}
+
+#bio{
+  font-family: "Josefin Slab"; 
+  font-size: 15px; 
+  padding-top: 5%; 
+  padding-left: 10px; 
+  border-left: 1px solid black; 
+} 
+
+
+.jumbotron{
+  margin-top: 25px; 
+  height: 500px; 
+  background-image: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2017/02/18/cool-awesome-wallpaper.jpg"); 
+  background-size: cover; 
+  background-position: center; 
+}
+
+#welcome-message{
+  padding-top: 10%; 
+  -webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+
+#linkssection{
+  border-bottom: 1px dashed black; 
+}
+
+#mainbodylinks{
+  justify-content: center; 
+  padding-top: 50px; 
+  padding-bottom: 25px; 
+}
+
+#mainbodylinks figure{
+  margin: auto; 
+  justify-content: center; 
+  padding-left: 35%; 
+}
+
+#mainbody-link{
+  justify-content: center; 
+  margin: auto; 
+}
+
+
+#footer{
+  padding-top: 25px; 
+}
+
+#footerlinks{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: flex-end; 
+}
+
+#footer-link{
+  padding: 5px; 
+  border-left: .5px solid black; 
+  border-right: .5px solid black;
+}
