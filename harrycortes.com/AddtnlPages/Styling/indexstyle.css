@@ -1,28 +1,37 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
-@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700');
+
+/*
+Global CSS rules. ---------------------------------------------------------> 
+*/
+
+html {
+  font-size: 16px;
+}
 
 body {
   background-color: white;
-  font-family: "Josefin Slab", sans-serif;
-  padding: 5px 25px;
-  font-size: 18px;
-  margin: auto;
+  font-family: "Josefin Slab";
+  width: 95%; 
+  margin: auto; 
   color: #444;
 }
 
 h1 {
-  font-family: "Orbitron", serif;
-  font-size: 38px;
+  font-size: 2rem;
 }
 
 ul{
   list-style: none; 
+  display: block; 
 }
 
+/*
+Header CSS rules. --------------------------------------------------------->
+*/
+
 #headerlinks{
+  margin-top: 1rem; 
   display: flex; 
   flex-wrap: wrap; 
 }
@@ -33,76 +42,105 @@ ul{
 }
 
 #header-link{
-  padding-right: 15px; 
-  padding-left: 15px; 
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+  padding-top: .5rem; 
 }
 
-#headerlinksright{
-  padding: 15px; 
-  padding-top: 0px; 
-  position: relative; 
+/*
+Banner CSS rules. --------------------------------------------------------->
+*/
+
+#sect {
+	margin-top: 1rem; 
+	margin-bottom: 1rem; 
 }
-
-#headerlinksright a:active{
-  top: 2px; 
-  color: black; 
-}
-
-
-#introduction{ 
-  padding-bottom: 15px; 
-  padding-top: 15px; 
-}
-
-#bio{
-  font-family: "Josefin Slab"; 
-  font-size: 15px; 
-  padding-top: 5%; 
-  padding-left: 10px; 
-  border-left: 1px solid black; 
-} 
-
 
 .jumbotron{
-  margin-top: 25px; 
-  height: 500px; 
-  background-image: url("http://www.hdwallpaperspulse.com/wp-content/uploads/2017/02/18/cool-awesome-wallpaper.jpg"); 
+  margin-top: 1.5rem; 
+  margin: auto; 
+  width: 97.5%; 
+  max-width: 100rem; 
+  min-height:  30rem; 
+  background-image: url("https://images.pexels.com/photos/414859/pexels-photo-414859.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); 
   background-size: cover; 
   background-position: center; 
 }
 
-#welcome-message{
-  padding-top: 10%; 
-  -webkit-text-fill-color: white; 
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
+#title{ 
+  -webkit-text-stroke-width: .33px;
+  -webkit-text-stroke-color: blue;
+  -webkit-text-fill-color: white;
 }
 
-
-#linkssection{
-  border-bottom: 1px dashed black; 
+#title h1{
+  font-size: 2.5rem; 
 }
 
-#mainbodylinks{
-  justify-content: center; 
-  padding-top: 50px; 
-  padding-bottom: 25px; 
-}
+/*
+Introduction CSS rules. ---------------------------------------------------------> 
+*/
 
-#mainbodylinks figure{
+#introduction{ 
+  min-width: 20rem; 
+  max-width: 60rem; 
+  width: 85%; 
   margin: auto; 
   justify-content: center; 
-  padding-left: 35%; 
+  padding-bottom: 1rem; 
+  padding-top: 1rem; 
 }
 
-#mainbody-link{
-  justify-content: center; 
+#biobox{ 
+  width: 50%; 
+  font-size: 1.3rem; 
+  margin: auto; 
+  display: inline; 
+  overflow: hidden; 
+} 
+
+
+#bio {
+  border-left: 1px solid black;
+  width: 95%; 
+  font-size: 1rem; 
+  padding-top: .25rem; 
+  padding-left: 1rem; 
+}
+
+#headshot {
+  width: 50%; 
+  margin: auto; 
+  margin-bottom: 1rem; 
+  display: inline; 
+  overflow: hidden; 
+}
+
+#introduction img {
+  max-width: 95%; 
   margin: auto; 
 }
+
+#description {
+  width: 95%; 
+  font-size: 1.2rem; 
+  padding-top: .25rem; 
+  padding-left: 1rem; 
+}
+
+/*
+Footer CSS rules. ---------------------------------------------------------------> 
+*/
 
 
 #footer{
-  padding-top: 25px; 
+  border-top: 1px dotted black; 
+  padding-top: 2rem; 
+  margin-bottom: 1rem; 
+}
+
+#footer p{
+  float: left; 
 }
 
 #footerlinks{
@@ -115,4 +153,55 @@ ul{
   padding: 5px; 
   border-left: .5px solid black; 
   border-right: .5px solid black;
+  min-height: 2.5rem; 
+  height: 2.75rem; 
+  max-height: 5rem; 
+}
+
+#footer-link a{
+}
+
+#footer-link img{
+  width: auto; 
+  height: 95%; 
+  max-height: 2.75rem; 
+  margin: auto; 
+}
+
+
+
+@media only screen and (max-width: 480) {
+  body {
+    font-size: 8px; 
+  }
+  #bio {
+    font-size: .5rem; 
+  }
+  .jumbotron{
+    height: 20rem; 
+  }
+}
+
+@media only screen and (max-width: 1000) {
+  body {
+    font-size: 12px; 
+  }
+  #bio{
+    font-size: 1rem; 
+  }
+  .jumbotron{
+    height: 25rem; 
+  }
+}
+
+@media only screen and (min-width: 1024) {
+  body {
+    font-size: 12px; 
+  }
+  #bio{
+    font-size: 1rem; 
+  }
+  .jumbotron{
+    height: 35rem; 
+  }
 }

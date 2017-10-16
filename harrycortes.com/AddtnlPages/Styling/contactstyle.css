@@ -1,28 +1,37 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
-@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+
+/*
+Global CSS rules. ---------------------------------------------------------> 
+*/
+
+html {
+  font-size: 16px; 
+}
 
 body {
   background-color: white;
-  font-family: "Josefin Slab", sans-serif;
-  padding: 5px 25px;
-  font-size: 18px;
-  margin: 0;
+  font-family: "Josefin Slab";
+  width: 95%; 
+  margin: auto; 
   color: #444;
 }
 
 h1 {
-  font-family: "Josefin Slab", serif;
-  font-size: 38px;
+  font-size: 2rem;
 }
 
 ul{
   list-style: none; 
+  display: block; 
 }
 
+/*
+Header CSS rules. --------------------------------------------------------->
+*/
+
 #headerlinks{
+  margin-top: 1rem; 
   display: flex; 
   flex-wrap: wrap; 
 }
@@ -33,20 +42,14 @@ ul{
 }
 
 #header-link{
-  padding-right: 15px; 
-  padding-left: 15px; 
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+  padding-top: .5rem; 
 }
 
-#headerlinksright{
-  padding: 15px; 
-  padding-top: 0px; 
-  position: relative; 
-}
-
-#headerlinksright a:active{
-  top: 2px; 
-  color: black; 
-}
+/*
+Body CSS rules. --------------------------------------------------------->
+*/
 
 
 #contact-section{
@@ -54,40 +57,61 @@ ul{
 }
 
 #contact-title{
-  padding: 50px; 
+  padding: 2.5rem; 
 }
 
 #contact-text{
   border-bottom: 1px dashed black; 
-  padding-bottom: 25px; 
+  padding: 2rem; 
 }
 
+/*
+LinksSection CSS rules. ---------------------------------------------------------> 
+*/
+
+
 #linkssection{
-  padding-top: 25px; 
-  padding-bottom: 25px; 
   border-bottom: 1px dashed black; 
+  width: 100%; 
 }
 
 #mainbodylinks{
   justify-content: center; 
-  padding-top: 50px; 
-  padding-bottom: 25px; 
-}
-
-#mainbodylinks figure{
-  margin: auto; 
-  justify-content: center; 
-  padding-left: 35%; 
+  padding-top: 3rem; 
+  padding-bottom: 2rem; 
+  width: 100%; 
 }
 
 #mainbody-link{
-  justify-content: center; 
   margin: auto; 
+  min-height: 4rem; 
+  height: 6rem; 
+  max-height: 8rem; 
 }
+
+#mainbodylinks a{
+}
+
+#mainbodylinks img{
+  margin: auto; 
+  padding-left: 35%; 
+  padding-right: 35%; 
+  height: 95%; 
+  width: auto; 
+}
+
+/*
+Footer CSS rules. ---------------------------------------------------------------> 
+*/
 
 
 #footer{
-  padding-top: 25px; 
+  padding-top: 2rem; 
+  margin-bottom: 1rem; 
+}
+
+#footer p{
+  float: left; 
 }
 
 #footerlinks{
@@ -100,4 +124,17 @@ ul{
   padding: 5px; 
   border-left: .5px solid black; 
   border-right: .5px solid black;
+  min-height: 2.5rem; 
+  height: 2.75rem; 
+  max-height: 5rem; 
+}
+
+#footer-link a{
+}
+
+#footer-link img{
+  width: auto; 
+  height: 95%; 
+  max-height: 2.75rem; 
+  margin: auto; 
 }

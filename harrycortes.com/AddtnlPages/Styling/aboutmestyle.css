@@ -1,27 +1,37 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+
+/*
+Global CSS rules. ---------------------------------------------------------> 
+*/
+
+html {
+  font-size: 16px; 
+}
 
 body {
   background-color: white;
-  font-family: "Josefin Slab", sans-serif;
-  padding: 5px 25px;
-  font-size: 18px;
-  margin: 0;
+  font-family: "Josefin Slab";
+  width: 95%; 
+  margin: auto; 
   color: #444;
 }
 
 h1 {
-  font-family: "Merriweather", serif;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 ul{
   list-style: none; 
+  display: block; 
 }
 
+/*
+Header CSS rules. --------------------------------------------------------->
+*/
+
 #headerlinks{
+  margin-top: 1rem; 
   display: flex; 
   flex-wrap: wrap; 
 }
@@ -32,40 +42,46 @@ ul{
 }
 
 #header-link{
-  padding-right: 15px; 
-  padding-left: 15px; 
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+  padding-top: .5rem; 
 }
 
-#headerlinksright{
-  padding: 15px; 
-  padding-top: 0px; 
-  position: relative; 
-}
-
-#headerlinksright a:active{
-  top: 2px; 
-  color: black; 
-}
+/*
+Pics CSS rules. --------------------------------------------------------->
+*/
 
 
 #Pics{
-  padding-top: 25px; 
+  padding: 1.5rem;
   border-bottom: 1px dotted black; 
+  font-size: 1.5rem; 
 }
+
+#Pics img{
+  height: auto;
+  width: 100%; 
+  margin: auto; 
+}
+
+/*
+Aboutme CSS rules. --------------------------------------------------------->
+*/
 
 #About-Me{
   border-bottom: 1px dotted black; 
 }
 
 #about-title{
-  padding-top: 25px; 
+  padding: 1rem; 
 }
 
 #about-info{
+  font-size: 1.05rem; 
   margin: auto; 
   width: 80%; 
-  padding-top: 25px; 
-  padding-bottom: 25px; 
+  padding-top: 1.5rem; 
+  padding-bottom: 1.5rem; 
 }
 
 #Mission-Statement{
@@ -73,14 +89,15 @@ ul{
 }
 
 #mission-title{
-  padding-top: 25px; 
+  padding: 1rem; 
 }
 
 #mission-info{
+  font-size: 1.05rem; 
   margin: auto; 
   width: 80%; 
-  padding-top: 25px; 
-  padding-bottom: 25px; 
+  padding-top: 1.5rem; 
+  padding-bottom: 1.5rem; 
 }
 
 #Elevator-Pitch{
@@ -88,19 +105,29 @@ ul{
 }
 
 #elevator-title{
-  padding-top: 25px; 
+  padding: 1rem; 
 }
 
 #elevator-info{
+  font-size: 1.05rem; 
   margin: auto; 
   width: 80%; 
-  padding-top: 25px; 
-  padding-bottom: 25px; 
+  padding-top: 1.5rem; 
+  padding-bottom: 1.5rem; 
 }
+
+/*
+Footer CSS rules. ---------------------------------------------------------------> 
+*/
 
 
 #footer{
-  padding-top: 50px; 
+  padding-top: 2rem; 
+  margin-bottom: 1rem; 
+}
+
+#footer p{
+  float: left; 
 }
 
 #footerlinks{
@@ -113,4 +140,17 @@ ul{
   padding: 5px; 
   border-left: .5px solid black; 
   border-right: .5px solid black;
+  min-height: 2.5rem; 
+  height: 2.75rem; 
+  max-height: 5rem; 
+}
+
+#footer-link a{
+}
+
+#footer-link img{
+  width: auto; 
+  height: 95%; 
+  max-height: 2.75rem; 
+  margin: auto; 
 }
