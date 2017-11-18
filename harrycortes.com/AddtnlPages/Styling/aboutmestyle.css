@@ -1,17 +1,13 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
 
-/*
-Global CSS rules. ---------------------------------------------------------> 
-*/
-
 html {
   font-size: 16px; 
 }
 
 body {
   background-color: white;
-  font-family: "Josefin Slab";
+  font-family: "Josefin Slab", sans-serif;
   width: 95%; 
   margin: auto; 
   color: #444;
@@ -23,7 +19,6 @@ h1 {
 
 ul{
   list-style: none; 
-  display: block; 
 }
 
 /*
@@ -48,7 +43,59 @@ Header CSS rules. --------------------------------------------------------->
 }
 
 /*
-Pics CSS rules. --------------------------------------------------------->
+Introduction CSS rules. ---------------------------------------------------------> 
+*/
+
+#introduction{ 
+  min-width: 20rem; 
+  max-width: 60rem; 
+  width: 85%; 
+  margin: auto; 
+  justify-content: center; 
+  padding-bottom: 1rem; 
+  padding-top: 1rem; 
+}
+
+#biobox{ 
+  width: 50%; 
+  font-size: 1.3rem; 
+  margin: auto; 
+  display: inline; 
+  overflow: hidden; 
+} 
+
+
+#bio {
+  border-left: 1px solid black;
+  width: 95%; 
+  font-size: 1rem; 
+  padding-top: 3.5rem; 
+  padding-left: 1rem; 
+}
+
+#headshot {
+  width: 50%; 
+  margin: auto; 
+  margin-bottom: 1rem; 
+  display: inline; 
+  overflow: hidden; 
+}
+
+#introduction img {
+  height: auto;
+  width: 75%; 
+  margin: auto; 
+}
+
+#description {
+  width: 95%; 
+  font-size: 1.2rem; 
+  padding-top: .25rem; 
+  padding-left: 1rem; 
+}
+
+/*
+[] CSS rules. --------------------------------------------------------->
 */
 
 
@@ -63,10 +110,6 @@ Pics CSS rules. --------------------------------------------------------->
   width: 100%; 
   margin: auto; 
 }
-
-/*
-Aboutme CSS rules. --------------------------------------------------------->
-*/
 
 #About-Me{
   border-bottom: 1px dotted black; 
